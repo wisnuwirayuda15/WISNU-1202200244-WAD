@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <title>WAD.CO</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" href="src/assets/logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="src/assets/logo.svg" type="image/x-icon">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- AlpineJS -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.12.3/cdn.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--Animation-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Custom CSS -->
+    <link href="src/css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav data-aos="fade-down" data-aos-duration="1000" class="container-xxl d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+            <div class="col-md-3 mb-2 mb-md-0">
+                <a class="navbar-brand d-flex align-items-center" href="/">
+                    <div class="fs-2 fw-bold"><span class="text-pink">WAD</span>.CO</div>
+                </a>
+            </div>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#home" class="rounded-3 nav-link px-3 link-secondary">HOME</a></li>
+                <li><a href="#services" class="rounded-3 nav-link px-3 link-secondary">SERVICES</a></li>
+                <li><a href="#testimoni" class="rounded-3 nav-link px-3 link-secondary">TESTIMONI</a></li>
+                <li><a href="#contact-us" class="rounded-3 nav-link px-3 link-secondary">CONTACT US</a></li>
+            </ul>
+
+            <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-outline-secondary me-2">LOGIN</button>
+                <button type="button" class="btn btn-primary">REGISTER</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div id="theme-btn">
+            <label class="switch">
+                <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <g fill="#ffd43b">
+                            <circle r="5" cy="12" cx="12"></circle>
+                            <path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path>
+                        </g>
+                    </svg></span>
+                <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path>
+                    </svg></span>
+                <input id="theme-switch" type="checkbox" class="input">
+                <span class="slider shadow"></span>
+            </label>
+        </div>
+
+        <button id="back-to-top" type="button" class="fs-1 btn btn-primary rounded-circle shadow" data-bs-toggle="tooltip" data-bs-title="Back to top"><i class="arrow"></i><i class="arrow"></i></button>
+
+        <section id="home" class="my-5 py-5">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col d-flex align-items-center justify-content-center mb-3">
+                        <div>
+                            <h1 style="font-size: 60px;" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" class="fw-bold">
+                                Unleash Your Style, Rent Your Fashion.</h1>
+                            <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500" class="text-secondary">
+                                Welcome to our Fashion Rental platform, where style knows no
+                                boundaries. Discover a world
+                                of
+                                endless possibilities as you explore.</p>
+                            <div class="d-flex align-items-center">
+                                <button type="button" class="btn btn-primary py-3 px-3" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">Get Started</button>
+                                <span class="text-secondary mx-4 animate__animated animate__infinite animate__pulse" style="cursor: pointer;" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900" data-bs-toggle="modal" data-bs-target="#trailer"><i class="bi bi-play-circle me-1"></i>Watch
+                                    Trailer</>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col justify-content-center d-flex" data-aos="fade-left" data-aos-duration="1000">
+                        <img src="src/assets/home.png" class="rounded-4" alt="home" width="auto" height="500">
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="trailer" tabindex="-1" data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-md-down">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title fw-bold">Trailer</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body d-flex align-items-center justify-content-center">
+                            <iframe width="900" height="auto" style="aspect-ratio: 16/9;" src="https://www.youtube-nocookie.com/embed/I10XB1-IIbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="my-5 py-5">
+            <div class="text-center">
+                <h1 data-aos="fade-up" data-aos-duration="1000" class="fw-bold" style="font-size: 50px;">Our Services</h1>
+                <p data-aos="fade-up" data-aos-duration="1000" class="text-secondary">Welcome to our Fashion Rental
+                    platform, where style knows no boundaries</p>
+            </div>
+
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-md-4">
+                        <img data-aos="fade-up" data-aos-duration="1000" src="src/assets/services-1.png" class="rounded-3 img-fluid my-4" alt="home" width="auto" height="370">
+                        <h1 data-aos="fade-up" data-aos-duration="1000" class="fw-bold" style="font-size: 40px;">Services 1</h1>
+                        <p data-aos="fade-up" data-aos-duration="1000" class="text-secondary">Welcome to our Fashion Rental
+                            platform, where style knows no boundaries</p>
+                        <h2 data-aos="fade-up" data-aos-duration="1000" class="fw-bold text-pink" style="font-size: 30px;">Start From $123</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" src="src/assets/services-2.png" class="rounded-3 img-fluid my-4" alt="home" width="auto" height="370">
+                        <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="fw-bold" style="font-size: 40px;">Services 2</h1>
+                        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="text-secondary">Welcome to our Fashion Rental
+                            platform, where style knows no boundaries</p>
+                        <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="fw-bold text-pink" style="font-size: 30px;">Start From $123</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" src="src/assets/services-3.png" class="rounded-3 img-fluid my-4" alt="home" width="auto" height="370">
+                        <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="fw-bold" style="font-size: 40px;">Services 3</h1>
+                        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="text-secondary">Welcome to our Fashion Rental
+                            platform, where style knows no boundaries</p>
+                        <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="fw-bold text-pink" style="font-size: 30px;">Start From $123</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimoni" class="my-5 py-5">
+            <div class="text-center">
+                <h1 data-aos="fade-up" data-aos-duration="1000" class="fw-bold" style="font-size: 50px;">Testimoni</h1>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="text-secondary">Welcome to our Fashion Rental
+                    platform, where style knows no boundaries</p>
+            </div>
+
+            <div class="container justify-content-center align-items-center d-flex" x-data="{hover: false}">
+                <div class="px-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                    <button x-on:mouseover="hover = true" x-on:mouseleave="hover = false" x-bind:class="hover ? 'animate__animated animate__infinite animate__pulse' : null" type="button" class="fs-3 btn btn-carousel btn-light shadow rounded-circle text-secondary" data-bs-target="#tertimoni-carousel" data-bs-slide="prev"><i class="bi bi-arrow-left"></i></button>
+                </div>
+
+                <div id="tertimoni-carousel" class="carousel slide col-5 justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active px-3">
+                            <div>
+                                <img src="src/assets/testimoni.png" class="rounded-3 img-fluid my-4" alt="home" width="auto" height="350">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h2 class="fw-bold" style="font-size: 40px;">Jarwo Kuat</h2>
+                                    <h3><i class="bi bi-star-fill text-warning me-2"></i>4.5</h3>
+                                </div>
+                                <p class="text-secondary">Welcome to our Fashion Rental
+                                    platform, where style knows no boundaries</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item px-3">
+                            <div>
+                                <img src="src/assets/testimoni.png" class="rounded-3 img-fluid my-4" alt="home" width="auto" height="350">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h2 class="fw-bold" style="font-size: 40px;">Jarwo Sehat</h2>
+                                    <h3><i class="bi bi-star-fill text-warning me-2"></i>4.7</h3>
+                                </div>
+                                <p class="text-secondary">Welcome to our Fashion Rental
+                                    platform, where style knows no boundaries</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item px-3">
+                            <div>
+                                <img src="src/assets/testimoni.png" class="rounded-3 img-fluid my-4" alt="home" width="auto" height="350">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h2 class="fw-bold" style="font-size: 40px;">Jarwo Sakit</h2>
+                                    <h3><i class="bi bi-star-fill text-warning me-2"></i>4.8</h3>
+                                </div>
+                                <p class="text-secondary">Welcome to our Fashion Rental
+                                    platform, where style knows no boundaries</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-5" x-data="{hover: false}">
+                    <button x-on:mouseover="hover = true" x-on:mouseleave="hover = false" x-bind:class="hover ? 'animate__animated animate__infinite animate__pulse' : null" type="button" class="fs-3 btn btn-carousel btn-light shadow rounded-circle text-secondary" data-bs-target="#tertimoni-carousel" data-bs-slide="next" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300"><i class="bi bi-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-us" class="my-5 py-5">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col d-flex align-items-center justify-content-center mb-3">
+                        <div>
+                            <div>
+                                <h1 style="font-size: 50px;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="fw-bold">
+                                    Contact Us</h1>
+                                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="text-secondary">
+                                    Welcome to our Fashion Rental platform, where style knows no
+                                    boundaries.</p>
+                            </div>
+                            <form autocomplete="off">
+                                <div class="mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Your name">
+                                </div>
+                                <div class="mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Your email">
+                                </div>
+                                <div class="mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" placeholder="Leave a message here" id="floatingTextarea" rows="8" style="resize: none;"></textarea>
+                                </div>
+                                <div class="d-flex justify-content-end" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                                    <button type="submit" class="btn btn-primary py-2 px-4">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="justify-content-center d-flex align-items-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.3074993639743!2d107.62911047479344!3d-6.973001668278337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9adf177bf8d%3A0x437398556f9fa03!2sTelkom%20University!5e0!3m2!1sen!2sid!4v1689128570406!5m2!1sen!2sid" width="400" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-3"></iframe>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-5 gap-3">
+                            <button x-data="{hover: false}" class="fs-4 btn-social btn btn-outline-secondary rounded-circle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" x-on:mouseover="hover = true" x-on:mouseleave="hover = false">
+                                <div x-bind:class="hover ? 'animate__animated animate__infinite animate__flash' : null">
+                                    <i class="bi bi-whatsapp"></i>
+                                </div>
+                            </button>
+                            <button x-data="{hover: false}" class="fs-4 btn-social btn btn-outline-secondary rounded-circle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" x-on:mouseover="hover = true" x-on:mouseleave="hover = false">
+                                <div x-bind:class="hover ? 'animate__animated animate__infinite animate__flash' : null">
+                                    <i class="bi bi-instagram"></i>
+                                </div>
+                            </button>
+                            <button x-data="{hover: false}" class="fs-4 btn-social btn btn-outline-secondary rounded-circle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" x-on:mouseover="hover = true" x-on:mouseleave="hover = false">
+                                <div x-bind:class="hover ? 'animate__animated animate__infinite animate__flash' : null">
+                                    <i class="bi bi-linkedin"></i>
+                                </div>
+                            </button>
+                            <button x-data="{hover: false}" class="fs-4 btn-social btn btn-outline-secondary rounded-circle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" x-on:mouseover="hover = true" x-on:mouseleave="hover = false">
+                                <div x-bind:class="hover ? 'animate__animated animate__infinite animate__flash' : null">
+                                    <i class="bi bi-facebook"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-fluid bg-primary">
+            <div class="container">
+                <div class="row justify-content-between py-4">
+                    <div class="col d-flex align-items-center" data-aos="fade-right" data-aos-duration="1000">
+                        <h1 class="fw-bold text-light" style="font-size: 60px;">WAD 2023</h1>
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-center" data-aos="fade-left" data-aos-duration="1000">
+                        <ul class="text-light fs-3" style="list-style-type: none">
+                            <li><span class="fw-bold text-pink">Nama:</span> Putu Wisnu Wirayuda Putra</li>
+                            <li><span class="fw-bold text-pink">NIM:</span> 1202200244</li>
+                            <li><span class="fw-bold text-pink">Kode Asprak:</span> PUTU</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Custom JS -->
+    <script src="src/js/main.js"></script>
+</body>
+
+</html>
