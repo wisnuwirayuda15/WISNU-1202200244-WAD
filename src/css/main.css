@@ -23,7 +23,8 @@
     height: 70px;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.active-nav-link {
     background-color: rgb(132, 211, 255) !important;
     color: white !important;
 }
@@ -38,10 +39,6 @@
     display: flex;
     justify-content: center;
 }
-
-
-
-
 
 /* back to top button */
 #back-to-top {
@@ -147,10 +144,6 @@
         left: 37%;
     }
 }
-
-
-
-
 
 /* theme switch button */
 .switch {
